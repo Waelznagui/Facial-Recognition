@@ -1,17 +1,18 @@
-# Core dependencies
-deepface==0.0.92
-opencv-python==4.10.0.84
+# Core Computer Vision
+opencv-python<=4.10.0.84
+numpy<2.0.0
 
-# DeepFace dependencies
-tensorflow==2.15.0
-numpy==1.26.4
-pandas==2.2.2
-gdown==5.1.0
-tqdm==4.66.2
-Pillow==10.3.0
-scipy==1.13.0
+# Face Recognition (DeepFace & TensorFlow)
+tensorflow==2.16.1
+tf-keras
+protobuf>=4.25.3,<5
+deepface
 
-# Face detection backends
-retina-face==0.0.17
-mtcnn==0.1.1
-mediapipe==0.10.14
+# Face Landmarks & Geometry (Fatigue Detection)
+mediapipe
+
+# Roboflow Inference Pipeline (Distraction Detection)
+inference
+
+# Utilities
+python-dotenv
